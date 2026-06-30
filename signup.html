@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Create account — Stackly IP</title>
+<meta name="description" content="Request access to your Stackly IP portal — client or attorney." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+<div class="auth-wrap">
+  <aside class="auth-aside">
+    <span class="a-orb a"></span><span class="a-orb b"></span>
+    <a class="auth-brand" href="index.html"><img src="https://wsrv.nl/?url=https://snabsolutions.in/wp-content/uploads/2026/02/stackly-snab-solutions.png&w=260&h=104&output=webp&q=80&fit=inside" alt="Stackly — SNAB Solutions" /></a>
+    <div class="a-mid">
+      <span class="a-eyebrow">Create your account</span>
+      <h1>Join the firm that <span class="g">keeps your ideas.</span></h1>
+      <p>Set up your portal in a minute and start tracking every patent, trademark and deadline in one secure place.</p>
+      <ul class="auth-points">
+        <li><span class="tick">✓</span> Live status on every filing</li>
+        <li><span class="tick">✓</span> Documents &amp; invoices in one vault</li>
+        <li><span class="tick">✓</span> A direct line to your attorney</li>
+      </ul>
+    </div>
+    <span class="a-foot">BAR COUNCIL · KAR/ADV/2016/0471</span>
+  </aside>
+
+  <main class="auth-main">
+    <a class="auth-back" href="index.html">← Back to site</a>
+    <div class="auth-card">
+      <div class="top">
+        <span class="eyebrow">Get started</span>
+        <h2>Create your account</h2>
+        <p class="sub">Tell us who you are to set up the right portal.</p>
+      </div>
+
+      <div class="role-toggle" data-role="client">
+        <span class="slider"></span>
+        <button type="button" data-role="client" class="on"><svg class="ri" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg> Client</button>
+        <button type="button" data-role="attorney"><svg class="ri" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg> Attorney</button>
+      </div>
+
+      <form id="signupForm" novalidate>
+        <div class="fieldset">
+          <div class="fld">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Ananya Rao" autocomplete="name" />
+            <span class="err">Enter your name (letters only, up to 16).</span>
+          </div>
+          <div class="fld">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@company.in" autocomplete="email" />
+            <span class="err">Enter a valid email address.</span>
+          </div>
+          <div class="fld">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="9876543210" inputmode="numeric" autocomplete="tel" />
+            <span class="err">Enter a valid 10-digit number.</span>
+          </div>
+          <div class="fld">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="At least 6 characters" autocomplete="new-password" />
+            <button type="button" class="pw-toggle">Show</button>
+            <span class="err">Password must be at least 6 characters.</span>
+          </div>
+          <div class="fld">
+            <label for="confirm">Confirm password</label>
+            <input type="password" id="confirm" name="confirm" placeholder="Re-enter password" autocomplete="new-password" />
+            <span class="err">Passwords do not match.</span>
+          </div>
+          <div class="auth-row" style="justify-content:flex-start">
+            <label><input type="checkbox" id="terms" /> I agree to the terms &amp; privacy policy</label>
+          </div>
+          <div class="fld" style="margin-top:-.4rem"><span class="err" id="termsErr">Please accept the terms to continue.</span></div>
+          <button type="submit" class="btn btn--gold">Create account <span class="ico">→</span></button>
+        </div>
+      </form>
+      <p class="auth-alt">Already have an account? <a href="signin.html">Sign in</a></p>
+    </div>
+  </main>
+</div>
+<script src="js/signup.js"></script>
+</body>
+</html>

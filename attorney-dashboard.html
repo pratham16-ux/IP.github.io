@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Attorney Dashboard — Stackly IP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/app.css" />
+</head>
+<body data-role="attorney">
+<div class="scrim-d"></div>
+<div class="dash">
+  <!-- Sidebar -->
+  <aside class="side">
+    <span class="s-orb"></span>
+    <div class="side-brand">
+      <a href="index.html"><img src="https://wsrv.nl/?url=https://snabsolutions.in/wp-content/uploads/2026/02/stackly-snab-solutions.png&w=260&h=104&output=webp&q=80&fit=inside" alt="Stackly — SNAB Solutions" /></a>
+      <button class="side-close" aria-label="Close menu">✕</button>
+    </div>
+    <div class="side-user"><span class="su-av" data-user-initials>--</span><span class="su-info"><b data-user-name>Member</b><small data-user-email>email</small></span></div>
+    <span class="side-role">Attorney Console</span>
+    <nav class="snav">
+      <a data-panel="overview" data-title="Overview" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Overview</a>
+      <a data-panel="caseload" data-title="Caseload"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16M4 12h16M4 19h10"/></svg> Caseload</a>
+      <a data-panel="clients" data-title="Clients"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5"/><path d="M16 6a3 3 0 0 1 0 6M21 20c0-2-1.5-3.5-4-4"/></svg> Clients</a>
+      <a data-panel="deadlines" data-title="Deadlines"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg> Deadlines</a>
+      <a data-panel="profile" data-title="Profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg> Profile</a>
+    </nav>
+    <div class="side-foot">
+      
+      <button class="s-logout" data-logout><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg> Sign out</button>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="dmain">
+    <header class="topbar">
+      <button class="t-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <span class="t-title">Overview</span>
+      <button class="t-bell" aria-label="Notifications"><span class="dot"></span><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></button>
+      <div class="user-chip"><span class="av" data-user-initials>--</span><span class="who"><b data-user-name>Attorney</b><small data-user-email>email</small></span></div>
+    </header>
+
+    <div class="content">
+      <!-- OVERVIEW -->
+      <section class="panel show" id="panel-overview">
+        <div class="welcome">
+          <h2>Good to see you, <span data-user-name>Attorney</span></h2>
+          <p style="color:var(--ink-soft)">Your caseload at a glance for this week.</p>
+          <div class="em">Signed in as <b data-user-email>email</b> · <span data-user-role>Attorney</span></div>
+          <div style="margin-top:1.2rem"><button class="btn btn--gold" data-modal-open><span class="ico">+</span> Add matter</button></div>
+        </div>
+        <div class="stat-cards">
+          <div class="dcard"><div class="ic">⚙</div><div class="v" data-count="27">0</div><div class="l">Open matters</div></div>
+          <div class="dcard"><div class="ic">◷</div><div class="v" data-count="6">0</div><div class="l">Deadlines this week</div></div>
+          <div class="dcard"><div class="ic">◇</div><div class="v" data-count="18">0</div><div class="l">Active clients</div></div>
+          <div class="dcard"><div class="ic">®</div><div class="v" data-count="9">0</div><div class="l">Filed this month</div></div>
+        </div>
+        <div class="grid-2">
+          <div class="block">
+            <div class="block-head"><h3>Recent filings</h3><button class="mini-btn" data-action="view">View all</button></div>
+            <div class="mlist">
+              <div class="matter"><span class="mi">PAT</span><div class="md"><b>Modular battery housing</b><small>Nirvi Robotics · FER response filed</small></div><span class="badge progress">In progress</span><div class="act"><button class="mini-btn" data-action="view">Open</button></div></div>
+              <div class="matter"><span class="mi">TM</span><div class="md"><b>"Beanroute" word mark</b><small>Beanroute Coffee · Registered</small></div><span class="badge granted">Granted</span><div class="act"><button class="mini-btn" data-action="view">Open</button></div></div>
+              <div class="matter"><span class="mi">DSN</span><div class="md"><b>Packaging design suite</b><small>Whitefield Studios · Filed</small></div><span class="badge progress">In progress</span><div class="act"><button class="mini-btn" data-action="view">Open</button></div></div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="block-head"><h3>Caseload by stage</h3></div>
+            <div style="margin-bottom:1rem"><div style="display:flex;justify-content:space-between;font-size:.86rem"><span>Drafting</span><span>8</span></div><div class="progress-line"><span data-w="70"></span></div></div>
+            <div style="margin-bottom:1rem"><div style="display:flex;justify-content:space-between;font-size:.86rem"><span>Prosecution</span><span>11</span></div><div class="progress-line"><span data-w="92"></span></div></div>
+            <div style="margin-bottom:1rem"><div style="display:flex;justify-content:space-between;font-size:.86rem"><span>Opposition</span><span>4</span></div><div class="progress-line"><span data-w="36"></span></div></div>
+            <div><div style="display:flex;justify-content:space-between;font-size:.86rem"><span>Granted</span><span>4</span></div><div class="progress-line"><span data-w="36"></span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CASELOAD -->
+      <section class="panel" id="panel-caseload">
+        <div class="block">
+          <div class="block-head"><h3>Caseload</h3>
+            <div class="filters" data-filter-group data-target="#amatters">
+              <button class="chip on" data-filter="all">All</button>
+              <button class="chip" data-filter="progress">In progress</button>
+              <button class="chip" data-filter="granted">Granted</button>
+              <button class="chip" data-filter="overdue">Action due</button>
+            </div>
+          </div>
+          <div class="mlist" id="amatters">
+            <div class="matter" data-status="progress"><span class="mi">PAT</span><div class="md"><b>Modular battery housing</b><small>Nirvi Robotics · App. 202541012345</small></div><span class="badge progress">In progress</span><div class="act"><button class="mini-btn" data-action="view">Open</button></div></div>
+            <div class="matter" data-status="overdue"><span class="mi">TM</span><div class="md"><b>"Nirvi" logo · Class 42</b><small>Nirvi Robotics · Objection reply due 30 Jun</small></div><span class="badge overdue">Action due</span><div class="act"><button class="mini-btn" data-action="view">Open</button></div></div>
+            <div class="matter" data-status="granted"><span class="mi">TM</span><div class="md"><b>"Beanroute" word mark</b><small>Beanroute Coffee · Reg. 5519921</small></div><span class="badge granted">Granted</span><div class="act"><button class="mini-btn" data-action="view">Open</button></div></div>
+            <div class="matter" data-status="progress"><span class="mi">DSN</span><div class="md"><b>Packaging design suite</b><small>Whitefield Studios · Awaiting exam</small></div><span class="badge progress">In progress</span><div class="act"><button class="mini-btn" data-action="view">Open</button></div></div>
+            <div class="matter" data-status="overdue"><span class="mi">PAT</span><div class="md"><b>Edge-AI inference chip</b><small>Koramangala Labs · FER due 04 Jul</small></div><span class="badge overdue">Action due</span><div class="act"><button class="mini-btn" data-action="view">Open</button></div></div>
+            <div class="matter" data-status="granted"><span class="mi">©</span><div class="md"><b>Brand style guide</b><small>Beanroute Coffee · Registered</small></div><span class="badge granted">Granted</span><div class="act"><button class="mini-btn" data-action="view">Open</button></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLIENTS -->
+      <section class="panel" id="panel-clients">
+        <div class="block">
+          <div class="block-head"><h3>Clients</h3><button class="mini-btn" data-modal-open>+ Add matter</button></div>
+          <div class="client-grid">
+            <div class="cli"><div class="cav">NR</div><b>Nirvi Robotics</b><small>4 active matters</small><div class="cm"><button class="mini-btn" data-action="view">View</button><button class="mini-btn" data-action="message">Message</button></div></div>
+            <div class="cli"><div class="cav">BC</div><b>Beanroute Coffee</b><small>3 active matters</small><div class="cm"><button class="mini-btn" data-action="view">View</button><button class="mini-btn" data-action="message">Message</button></div></div>
+            <div class="cli"><div class="cav">WS</div><b>Whitefield Studios</b><small>2 active matters</small><div class="cm"><button class="mini-btn" data-action="view">View</button><button class="mini-btn" data-action="message">Message</button></div></div>
+            <div class="cli"><div class="cav">KL</div><b>Koramangala Labs</b><small>5 active matters</small><div class="cm"><button class="mini-btn" data-action="view">View</button><button class="mini-btn" data-action="message">Message</button></div></div>
+            <div class="cli"><div class="cav">IH</div><b>Indiranagar Health</b><small>1 active matter</small><div class="cm"><button class="mini-btn" data-action="view">View</button><button class="mini-btn" data-action="message">Message</button></div></div>
+            <div class="cli"><div class="cav">DS</div><b>Domlur Systems</b><small>3 active matters</small><div class="cm"><button class="mini-btn" data-action="view">View</button><button class="mini-btn" data-action="message">Message</button></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEADLINES -->
+      <section class="panel" id="panel-deadlines">
+        <div class="block">
+          <div class="block-head"><h3>Upcoming deadlines</h3></div>
+          <div class="mlist">
+            <div class="matter"><span class="mi">30<br>Jun</span><div class="md"><b>TM objection reply — "Nirvi" logo</b><small>Nirvi Robotics · Class 42</small></div><span class="badge overdue">2 days</span><div class="act"><button class="mini-btn" data-action="done">Mark done</button></div></div>
+            <div class="matter"><span class="mi">04<br>Jul</span><div class="md"><b>FER response — Edge-AI chip</b><small>Koramangala Labs</small></div><span class="badge progress">6 days</span><div class="act"><button class="mini-btn" data-action="done">Mark done</button></div></div>
+            <div class="matter"><span class="mi">11<br>Jul</span><div class="md"><b>Design renewal filing</b><small>Whitefield Studios</small></div><span class="badge pending">13 days</span><div class="act"><button class="mini-btn" data-action="done">Mark done</button></div></div>
+            <div class="matter"><span class="mi">18<br>Jul</span><div class="md"><b>Patent annuity payment</b><small>Domlur Systems</small></div><span class="badge pending">20 days</span><div class="act"><button class="mini-btn" data-action="done">Mark done</button></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFILE -->
+      <section class="panel" id="panel-profile">
+        <div class="block">
+          <div class="block-head"><h3>Profile</h3></div>
+          <form class="pform" id="profileForm" novalidate>
+            <div class="fld"><label for="pname">Full name</label><input type="text" id="pname" /><span class="err">Letters only, up to 16 characters.</span></div>
+            <div class="fld"><label for="pemail">Email</label><input type="email" id="pemail" /><span class="err">Enter a valid email.</span></div>
+            <div class="fld"><label for="pphone">Phone</label><input type="tel" id="pphone" placeholder="10-digit number" inputmode="numeric" /><span class="err">Enter a valid 10-digit number.</span></div>
+            <div class="fld"><label for="preg">Registration no.</label><input type="text" id="preg" placeholder="PA · IN/2016/0471" /></div>
+            <button type="submit" class="btn btn--gold" style="justify-self:start">Save changes</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal">
+  <div class="mbg"></div>
+  <div class="mbox">
+    <button class="mclose" aria-label="Close">✕</button>
+    <h3>Add matter</h3>
+    <p class="msub">Open a new matter on the register.</p>
+    <form>
+      <div class="fld" style="margin-bottom:1rem"><label for="mtitle">Matter title</label><input type="text" id="mtitle" name="title" placeholder="e.g. Edge-AI inference chip" /><span class="err">Please add a title.</span></div>
+      <div class="fld" style="margin-bottom:1rem"><label for="mclient">Client</label><input type="text" id="mclient" name="client" placeholder="Koramangala Labs" /></div>
+      <div class="fld" style="margin-bottom:1.2rem"><label for="mtype">Register</label>
+        <select id="mtype" name="type" style="width:100%;padding:.8rem 1rem;border:1px solid var(--line);border-radius:11px;background:var(--mist);font-family:inherit"><option>Patent</option><option>Trademark</option><option>Copyright</option><option>Design</option></select>
+      </div>
+      <button type="submit" class="btn btn--gold" style="width:100%;justify-content:center">Create matter <span class="ico">→</span></button>
+    </form>
+  </div>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
