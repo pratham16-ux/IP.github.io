@@ -102,7 +102,7 @@ h1,h2,h3,h4{font-family:'Sora',sans-serif;line-height:1.07;letter-spacing:-.025e
 .site-header.scrolled{border-color:var(--line);box-shadow:0 10px 36px -24px rgba(12,35,28,.5)}
 .header-inner{width:min(100% - 40px,var(--container));margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .brand{display:flex;align-items:center;flex-shrink:0}
-.logo{height:46px;width:auto;display:block;object-fit:contain}
+.logo{height:55px;width:auto;display:block;object-fit:contain}
 .nav{display:flex;align-items:center;gap:2rem}
 .nav a{font-size:.94rem;font-weight:600;color:var(--ink-soft);position:relative;padding:.2rem 0;transition:color .25s}
 .nav a::after{content:"";position:absolute;left:0;bottom:-3px;height:2px;width:0;background:var(--grad-emerald);transition:width .3s var(--ease)}
@@ -382,7 +382,7 @@ body.nav-open .mn-foot{animation:mn-in .55s var(--ease) .56s forwards}
 .site-footer .container{position:relative;z-index:2}
 .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
 .foot-logo-plate{display:inline-block;background:none;padding:0}
-.foot-logo-plate .logo{height:42px}
+.foot-logo-plate .logo{height:55px}
 .foot-social{display:flex;gap:1.2rem;margin-top:1.2rem}
 .foot-social a{color:rgba(255,255,255,.6);display:inline-flex;transition:color .25s,transform .25s var(--ease)}
 .foot-social a:hover{color:var(--gold-lite);transform:translateY(-3px)}
