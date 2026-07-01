@@ -17,7 +17,7 @@
 .auth-aside .a-orb.a{width:50vw;height:50vw;top:-12%;right:-14%;background:radial-gradient(circle,rgba(22,184,148,.5),transparent 65%);animation:float-bob 8s ease-in-out infinite}
 .auth-aside .a-orb.b{width:40vw;height:40vw;bottom:-16%;left:-12%;background:radial-gradient(circle,rgba(200,162,75,.4),transparent 65%);animation:float-bob 10s ease-in-out infinite}
 .auth-brand{position:relative;z-index:1}
-.auth-brand img{height:46px;filter:brightness(0) invert(1)}
+.auth-brand img{height:55px;filter:brightness(0) invert(1)}
 .auth-aside .a-mid{position:relative;z-index:1;max-width:440px}
 .auth-aside .a-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-lite);margin-bottom:1.4rem;display:inline-block}
 .auth-aside h1{font-size:clamp(2rem,3.4vw,3rem);color:#fff;margin-bottom:1.1rem;line-height:1.08}

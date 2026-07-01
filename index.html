@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/redesign.css" />
 </head>
 <body>
 
@@ -23,7 +24,6 @@
       <a href="contact.html">Contact</a>
     </nav>
     <div class="header-cta">
-      
       <a href="signin.html" class="btn btn--gold">Sign in<span class="ico">→</span></a>
       <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
     </div>
@@ -44,15 +44,15 @@
     <a href="contact.html" class="mn-link"><span class="mn-num">05</span><span class="mn-text"><span class="mn-name">Contact</span><span class="mn-desc">Book a consultation</span></span><span class="mn-arrow">→</span></a>
   </div>
   <div class="mn-foot">
-    <div class="mn-contact"><a href="tel:+918040000471">+91 80 4000 0471</a><a href="mailto:hello@stacklyip.in">hello@stacklyip.in</a><span>100ft Road, Indiranagar</span><a href="signin.html">Sign in</a></div>
-    <a href="contact.html" class="btn">Book a consultation <span class="ico">→</span></a>
+
+    <a href="Signin.html" class="btn">Sign in<span class="ico">→</span></a>
   </div>
 </nav>
 
 <main>
-<!-- 01 · HERO (full image) -->
+<!-- HERO (full image) -->
 <section class="hero">
-  <div class="hero-bg"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1589829085413-56de8ae18c73&w=1280&h=820&fit=crop&output=webp&q=62" alt="Law library at Stackly IP" loading="eager" /></div>
+  <div class="hero-bg"><img src="pic/patent-lawyer.webp" alt="Law library at Stackly IP" loading="eager" /></div>
   <div class="container hero-grid">
     <div class="hero-copy">
       <span class="eyebrow on-dark hero-tag">IPR · BLR · Reg. No. 0471</span>
@@ -72,7 +72,7 @@
   <div class="scroll-cue"><span class="arrow">↓</span> Scroll</div>
 </section>
 
-<!-- 02 · STRIP -->
+<!-- STRIP -->
 <div class="strip" aria-hidden="true">
   <div class="strip-track">
     <span>Patent Prosecution</span><span>Trademark Registration</span><span>Copyright</span><span>Design Rights</span><span>IP Litigation</span><span>Licensing &amp; Deals</span>
@@ -80,13 +80,13 @@
   </div>
 </div>
 
-<!-- 03 · WHO WE ARE -->
-<section class="section-pad">
+<!-- WHO WE ARE (paper · split) -->
+<section class="zone zone--paper">
   <div class="container split">
     <div class="media reveal"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1556761175-5973dc0f32e7&w=800&h=900&fit=crop&output=webp&q=64" alt="Counsel meeting a client" loading="lazy" /></div>
     <div class="reveal d1">
-      <span class="eyebrow">Who we are</span>
-      <h2 style="font-size:clamp(1.9rem,3.2vw,2.5rem);margin:1rem 0 1rem">Idea-keepers for India's builders.</h2>
+      <span class="smark">01 · Who we are</span>
+      <h2 style="font-size:clamp(1.9rem,3.2vw,2.5rem);margin:1.1rem 0 1rem">Idea-keepers for India's builders.</h2>
       <p style="color:var(--ink-soft)">Since 2016 we've put thousands of patents, marks and designs on the register for founders who refused to lose to a faster filer. We file fast, quote in plain rupees, and treat every idea as if it were our own.</p>
       <ul class="feature-list">
         <li><span class="tick">✓</span><span><b>Registered attorneys only</b><span class="d">The lawyer you meet is the one who drafts your claim.</span></span></li>
@@ -97,13 +97,12 @@
   </div>
 </section>
 
-<!-- 04 · PRACTICE -->
-<section class="section-pad" style="padding-top:0">
+<!-- PRACTICE (mist · split header + cards) -->
+<section class="zone zone--mist">
   <div class="container">
-    <div class="sec-head reveal">
-      <span class="eyebrow">What we protect</span>
-      <h2>Six registers. One firm that knows each by name.</h2>
-      <p>From a provisional patent to a courtroom injunction, every mandate is run by lawyers who file at the Indian registries every week.</p>
+    <div class="head head--split reveal">
+      <div><span class="smark">02 · What we protect</span><h2>Six registers. One firm that knows each by name.</h2></div>
+      <p class="lead">From a provisional patent to a courtroom injunction, every mandate is run by lawyers who file at the Indian registries every week.</p>
     </div>
     <div class="practice-grid">
       <article class="p-card reveal"><div class="p-num">01 / Patents</div><div class="p-icon">⚙</div><h3>Patent prosecution</h3><p>Drafting, filing and prosecution before the Indian Patent Office — provisionals, completes, PCT national phase and FER responses.</p><a href="practice.html" class="more">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
@@ -116,24 +115,12 @@
   </div>
 </section>
 
-<!-- 05 · STAT BANNER -->
-<section class="section-pad" style="padding-top:0">
-  <div class="container">
-    <div class="stat-banner reveal">
-      <div class="stat"><div class="n"><span data-count="2400" data-suffix="+">0</span></div><div class="t">IP applications handled</div></div>
-      <div class="stat"><div class="n">₹<span data-count="640" data-suffix="Cr">0</span></div><div class="t">Asset value secured</div></div>
-      <div class="stat"><div class="n"><span data-count="38">0</span></div><div class="t">Reported court wins</div></div>
-      <div class="stat"><div class="n"><span data-count="11">0</span></div><div class="t">Patent &amp; TM attorneys</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 06 · WHY US -->
-<section class="section-pad" style="padding-top:0">
+<!-- WHY US (paper · split reversed) -->
+<section class="zone zone--paper">
   <div class="container split">
     <div class="reveal">
-      <span class="eyebrow">Why founders pick us</span>
-      <h2 style="font-size:clamp(1.9rem,3.2vw,2.5rem);margin:1rem 0 1rem">Protection that behaves like an asset.</h2>
+      <span class="smark">03 · Why founders pick us</span>
+      <h2 style="font-size:clamp(1.9rem,3.2vw,2.5rem);margin:1.1rem 0 1rem">Protection that behaves like an asset.</h2>
       <p style="color:var(--ink-soft)">We don't bill by the hour to write you a letter. We build a protection map, file it, defend it, and keep it diligence-ready for your next round.</p>
       <ul class="feature-list">
         <li><span class="tick">✓</span><span><b>Watch &amp; enforcement</b><span class="d">We police the journal and stop copycats early.</span></span></li>
@@ -145,10 +132,28 @@
   </div>
 </section>
 
-<!-- 07 · PROCESS -->
-<section class="section-pad" style="padding-top:0">
+<!-- MANIFESTO (ink · signature break) -->
+<section class="zone zone--ink">
+  <span class="blob g"></span><span class="blob d"></span>
   <div class="container">
-    <div class="sec-head reveal"><span class="eyebrow">How a mandate runs</span><h2>From first idea to a number on the register.</h2></div>
+    <div class="manifesto reveal">
+      <span class="smark">The Stackly belief</span>
+      <p>An idea is only an asset once it has <span class="hl">a number on the register.</span> Until then it is a head start anyone can take. Our whole job is to close that gap — quickly, in plain rupees, and before the faster filer beats you to it.</p>
+      <cite>— Arjun Menon, Founder &amp; Managing Partner</cite>
+    </div>
+    <div class="stat-rail reveal d1" style="margin-top:clamp(40px,5vw,64px)">
+      <div class="si"><span class="n"><span data-count="2400" data-suffix="+">0</span></span><span class="t">IP applications handled</span></div>
+      <div class="si"><span class="n">₹<span data-count="640" data-suffix="Cr">0</span></span><span class="t">Asset value secured</span></div>
+      <div class="si"><span class="n"><span data-count="38">0</span></span><span class="t">Reported court wins</span></div>
+      <div class="si"><span class="n"><span data-count="11">0</span></span><span class="t">Patent &amp; TM attorneys</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS (mist · display header + steps) -->
+<section class="zone zone--mist">
+  <div class="container">
+    <div class="head head--display reveal"><span class="smark">04 · How a mandate runs</span><h2>From first idea to a number on the register.</h2></div>
     <div class="steps">
       <div class="step reveal"><div class="s-n">STEP 01</div><h3>Disclosure</h3><p>You walk us through the idea or brand. We sign an NDA and run a clearance search the same week.</p></div>
       <div class="step reveal d1"><div class="s-n">STEP 02</div><h3>Strategy</h3><p>We map the right register, jurisdictions and budget in INR — no surprises, fixed fee where possible.</p></div>
@@ -158,10 +163,10 @@
   </div>
 </section>
 
-<!-- 08 · INDUSTRIES -->
-<section class="section-pad" style="padding-top:0">
+<!-- INDUSTRIES (paper · centered) -->
+<section class="zone zone--paper">
   <div class="container">
-    <div class="sec-head center reveal"><span class="eyebrow">Who we work with</span><h2>Built for the way India builds.</h2></div>
+    <div class="head head--center reveal"><span class="smark">05 · Who we work with</span><h2>Built for the way India builds.</h2></div>
     <div class="ind-grid">
       <div class="ind reveal"><div class="ic">⚛</div><h3>Deep-tech</h3><p>Robotics, EV, semiconductors</p></div>
       <div class="ind reveal d1"><div class="ic">⌬</div><h3>SaaS &amp; software</h3><p>Platforms and AI products</p></div>
@@ -175,27 +180,29 @@
   </div>
 </section>
 
-<!-- 09 · GALLERY -->
-<section class="section-pad" style="padding-top:0">
+<!-- GALLERY (mist · bento + split header) -->
+<section class="zone zone--mist">
   <div class="container">
-    <div class="sec-head reveal"><span class="eyebrow">Inside the practice</span><h2>The chambers, the register, the work.</h2><p>A look at where filings are drafted and disputes are argued. Hover any frame to see the detail.</p></div>
+    <div class="head head--split reveal">
+      <div><span class="smark">06 · Inside the practice</span><h2>The chambers, the register, the work.</h2></div>
+      <p class="lead">A look at where filings are drafted and disputes are argued. Hover any frame to see the detail.</p>
+    </div>
     <div class="gallery-grid bento">
-      
-      <figure class="g-item b-tall reveal"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1521587760476-6c12a4b040da&w=700&h=900&fit=crop&output=webp&q=64" alt="Law reference library" loading="lazy" /><span class="g-icon">+</span><figcaption class="g-overlay"><span class="g-tag">No. 01 · Archive</span><h3>The IP archive</h3><p>Nine years of prosecuted files, on the shelf.</p></figcaption></figure>
-      <figure class="g-item b-wide reveal d1"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1497366811353-6870744d04b2&w=1000&h=560&fit=crop&output=webp&q=64" alt="Conference room" loading="lazy" /><span class="g-icon">+</span><figcaption class="g-overlay"><span class="g-tag">No. 02 · Boardroom</span><h3>Strategy room</h3><p>Where licensing and deal sheets get built.</p></figcaption></figure>
-      <figure class="g-item reveal d2"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1450101499163-c8848c66ca85&w=700&h=560&fit=crop&output=webp&q=64" alt="Drafting a specification" loading="lazy" /><span class="g-icon">+</span><figcaption class="g-overlay"><span class="g-tag">No. 03 · Drafting</span><h3>Specification desk</h3><p>Claims drafted, line by line.</p></figcaption></figure>
-      <figure class="g-item reveal"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1556761175-5973dc0f32e7&w=700&h=560&fit=crop&output=webp&q=64" alt="Counsel meeting a client" loading="lazy" /><span class="g-icon">+</span><figcaption class="g-overlay"><span class="g-tag">No. 04 · Counsel</span><h3>Client counsel</h3><p>Founders, briefed in plain language.</p></figcaption></figure>
-      <figure class="g-item b-wide reveal d1"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1589994965851-a8f479c573a9&w=1000&h=560&fit=crop&output=webp&q=64" alt="Court building columns" loading="lazy" /><span class="g-icon">+</span><figcaption class="g-overlay"><span class="g-tag">No. 05 · Litigation</span><h3>Before the bench</h3><p>Injunctions argued at the IP Division.</p></figcaption></figure>
-      <figure class="g-item reveal d2"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1551836022-d5d88e9218df&w=700&h=560&fit=crop&output=webp&q=64" alt="Signing a licensing agreement" loading="lazy" /><span class="g-icon">+</span><figcaption class="g-overlay"><span class="g-tag">No. 06 · Deals</span><h3>Licence signed</h3><p>IP that moves from idea to revenue.</p></figcaption></figure>
+      <figure class="g-item reveal"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1521587760476-6c12a4b040da&w=700&h=900&fit=crop&output=webp&q=64" alt="Law reference library" loading="lazy" /><span class="plate">No. 01 · Archive</span><span class="g-icon">+</span><figcaption class="g-overlay"><span class="g-tag">No. 01 · Archive</span><h3>The IP archive</h3><p>Nine years of prosecuted files, on the shelf.</p></figcaption></figure>
+      <figure class="g-item reveal d1"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1497366811353-6870744d04b2&w=1000&h=560&fit=crop&output=webp&q=64" alt="Conference room" loading="lazy" /><span class="plate">No. 02 · Boardroom</span><span class="g-icon">+</span><figcaption class="g-overlay"><span class="g-tag">No. 02 · Boardroom</span><h3>Strategy room</h3><p>Where licensing and deal sheets get built.</p></figcaption></figure>
+      <figure class="g-item reveal d2"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1450101499163-c8848c66ca85&w=700&h=560&fit=crop&output=webp&q=64" alt="Drafting a specification" loading="lazy" /><span class="plate">No. 03 · Drafting</span><span class="g-icon">+</span><figcaption class="g-overlay"><span class="g-tag">No. 03 · Drafting</span><h3>Specification desk</h3><p>Claims drafted, line by line.</p></figcaption></figure>
+      <figure class="g-item reveal"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1556761175-5973dc0f32e7&w=700&h=560&fit=crop&output=webp&q=64" alt="Counsel meeting a client" loading="lazy" /><span class="plate">No. 04 · Counsel</span><span class="g-icon">+</span><figcaption class="g-overlay"><span class="g-tag">No. 04 · Counsel</span><h3>Client counsel</h3><p>Founders, briefed in plain language.</p></figcaption></figure>
+      <figure class="g-item reveal d1"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1589994965851-a8f479c573a9&w=1000&h=560&fit=crop&output=webp&q=64" alt="Court building columns" loading="lazy" /><span class="plate">No. 05 · Litigation</span><span class="g-icon">+</span><figcaption class="g-overlay"><span class="g-tag">No. 05 · Litigation</span><h3>Before the bench</h3><p>Injunctions argued at the IP Division.</p></figcaption></figure>
+      <figure class="g-item reveal d2"><img src="https://wsrv.nl/?url=images.unsplash.com/photo-1551836022-d5d88e9218df&w=700&h=560&fit=crop&output=webp&q=64" alt="Signing a licensing agreement" loading="lazy" /><span class="plate">No. 06 · Deals</span><span class="g-icon">+</span><figcaption class="g-overlay"><span class="g-tag">No. 06 · Deals</span><h3>Licence signed</h3><p>IP that moves from idea to revenue.</p></figcaption></figure>
     </div>
     <div class="gallery-cta"><a href="gallery.html" class="btn btn--gold">View the full gallery <span class="ico">→</span></a></div>
   </div>
 </section>
 
-<!-- 10 · TESTIMONIALS -->
-<section class="section-pad" style="padding-top:0">
+<!-- TESTIMONIALS (paper · centered) -->
+<section class="zone zone--paper">
   <div class="container">
-    <div class="sec-head center reveal"><span class="eyebrow">In their words</span><h2>Founders who sleep better.</h2></div>
+    <div class="head head--center reveal"><span class="smark">07 · In their words</span><h2>Founders who sleep better.</h2></div>
     <div class="quotes">
       <figure class="quote reveal"><div class="mark">&ldquo;</div><p>Stackly got our core patent granted after two FERs everyone else said we'd lose. It carried our Series A.</p><figcaption class="who"><span class="av">AR</span><span><b>Ananya Rao</b><small>Founder, Nirvi Robotics</small></span></figcaption></figure>
       <figure class="quote reveal d1"><div class="mark">&ldquo;</div><p>They registered our mark across nine classes and shut down three copycats on Indiranagar in a month.</p><figcaption class="who"><span class="av">VK</span><span><b>Vikram Kamath</b><small>CEO, Beanroute Coffee</small></span></figcaption></figure>
@@ -204,10 +211,10 @@
   </div>
 </section>
 
-<!-- 11 · FAQ -->
-<section class="section-pad" style="padding-top:0">
+<!-- FAQ (mist) -->
+<section class="zone zone--mist">
   <div class="container">
-    <div class="sec-head center reveal"><span class="eyebrow">Good to know</span><h2>Questions founders ask first.</h2></div>
+    <div class="head head--center reveal"><span class="smark">08 · Good to know</span><h2>Questions founders ask first.</h2></div>
     <div class="faq reveal">
       <div class="faq-item"><button class="faq-q">How fast can you file a patent? <span class="faq-ic">+</span></button><div class="faq-a"><div><p>A provisional specification to lock your priority date can usually be drafted and filed within five to seven working days of disclosure, often faster for urgent matters.</p></div></div></div>
       <div class="faq-item"><button class="faq-q">Do you work on fixed fees? <span class="faq-ic">+</span></button><div class="faq-a"><div><p>Wherever the scope allows, yes — quoted upfront in rupees and exclusive of government charges. Litigation and complex prosecution are scoped per stage so you always know the next cost.</p></div></div></div>
@@ -217,8 +224,8 @@
   </div>
 </section>
 
-<!-- 12 · CTA -->
-<section class="container">
+<!-- CTA -->
+<section class="container" style="padding-block:clamp(20px,4vw,40px) 0">
   <div class="cta-band reveal">
     <h2>Let's get your idea on the register.</h2>
     <p>Book a 30-minute consultation with a Stackly IP attorney. We'll tell you exactly what to protect and what it costs — in plain rupees.</p>
@@ -234,7 +241,7 @@
   <div class="container">
     <div class="foot-grid">
       <div class="foot-about">
-        <div class="foot-logo-plate"><img class="logo" src="https://wsrv.nl/?url=https://snabsolutions.in/wp-content/uploads/2026/02/stackly-snab-solutions.png&w=260&h=104&output=webp&q=80&fit=inside" alt="Stackly — SNAB Solutions" /></div>
+        <div class="foot-logo-plate"><a href="index.html"><img class="logo" src="https://wsrv.nl/?url=https://snabsolutions.in/wp-content/uploads/2026/02/stackly-snab-solutions.png&w=260&h=104&output=webp&q=80&fit=inside" alt="Stackly — SNAB Solutions" /></a></div>
         <p>An intellectual property law firm in Bengaluru, protecting the ideas, brands and designs of India's builders.</p>
         <div class="foot-social">
           <a href="404.html" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21H22v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H14z"/></svg></a>
@@ -244,7 +251,7 @@
         </div>
       </div>
       <div class="foot-col">
-        <h4>Process</h4>
+        <h4>Practice</h4>
         <a href="practice.html">Patents</a>
         <a href="practice.html">Trademarks</a>
         <a href="practice.html">Copyright</a>
